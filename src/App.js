@@ -13,7 +13,7 @@ const instruments = [
   {name: "Rhodes MK8", type: "Keyboard", acoustic: 0, price: 5000, image: "/images/rhodes.jpeg", favorite: false},
   {name: "Yamaha YPG 235", type: "Keyboard", acoustic: 0, price: 300, image: "/images/ypg.jpeg", favorite: false},
   {name: "Gibson SG Special", type: "Guitar", acoustic: 0, price: 400, image: "/images/gibson.jpeg", favorite: false},
-  {name: "Taylor Acoustic-Electric Guitar", type: "Guitar", acoustic: 2, price: 3000, image: "./images/taylor.jpeg", favorite: false},
+  {name: "Taylor Acoustic-Electric Guitar", type: "Guitar", acoustic: 2, price: 3000, image: "/images/taylor.jpeg", favorite: false},
   {name: "AKG Microphone", type: "Microphone", acoustic: 0, price: 400, image: "/images/akg.jpeg", favorite: false},
   {name: "Neuman Microphone", type: "Microphone", acoustic: 0, price: 700, image: "/images/neuman.jpeg", favorite: false},
   {name: "Shure SM58", type: "Microphone", acoustic: 0, price: 300, image: "/images/sm58.jpeg", favorite: false},
@@ -143,49 +143,49 @@ function App() {
       <div class="criteria">
          
         <form id="filtering">
-          <button type="reset" name="misc1" onClick={() => {setMisc("all"); setInst("clear"); stackFilters();}}>No filter</button>          
+          <button type="reset" name="misc1" onClick={() => {setMisc("all"); setInst("clear"); stackFilters();}}>No filter </button>          
           <h2 class="miscName">Miscellaneous</h2>
           <label>
             <input type="radio" name="misc" onClick={() => {setMisc("acoustic"); stackFilters();}}/>
-            Acoustic
+            Acoustic 
           </label>
           <label>
             
             <input type="radio" name="misc" onClick={() => {setMisc("electric"); stackFilters();}}/>
-            Electric
+            Electric 
           </label>
           <label>
             
             <input type="radio" name="misc" onClick={() => {setMisc("price"); stackFilters();}}/>
-            By Price
+            By Price 
           </label>
           <h2>Instrument</h2>
           <label>
             <input type="radio" name="inst" onClick={() => {setInst("guitar"); stackFilters();}}/>
-            Guitar
+            Guitar 
           </label>
           <label>
           <input type="radio" name="inst" onClick={() => {setInst("piano"); stackFilters();}}/>
-            Piano
+            Piano 
           </label>
           <label>
           <input type="radio" name="inst" onClick={() => {setInst("keyboard"); stackFilters();}}/>
-            Keyboard
+            Keyboard 
           </label>
           <label>
             
             <input type="radio" name="inst" onClick={() => {setInst("mic"); stackFilters();}}/>
-            Microphone
+            Microphone 
           </label>
           <label>
             
             <input type="radio" name="inst" onClick={() => {setInst("synth"); stackFilters();}}/>
-            Synth
+            Synth 
           </label>
           <label>
             
             <input type="radio" name="inst" onClick={() => {setInst("theremin"); stackFilters();}}/>
-            Theremin
+            Theremin 
           </label>
         </form>
       </div>
