@@ -131,6 +131,10 @@ function App() {
           </label>
           <h2>Instrument</h2>
           <label>
+            <input type="radio" name="inst" onClick={() => {setInst("clear"); stackFilters();}}/>
+            All 
+          </label>
+          <label>
             <input type="radio" name="inst" onClick={() => {setInst("guitar"); stackFilters();}}/>
             Guitar 
           </label>
