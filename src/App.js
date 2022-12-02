@@ -26,10 +26,8 @@ function App() {
 
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
-  // const [currArr, setcurrArr] = useState([...ogArr]);
   const [misc, setMisc] = useState("clear");
   const [instr, setInst] = useState("clear");
-  // const [ref, setRef] = useState(false);
   let arr = ogArr;
   let loaded = false;
   const updatePrice = () => {
@@ -38,8 +36,6 @@ function App() {
     setTotal(sum);
   }
   const stackFilters = () => {
-    // console.log(misc);
-    // console.log(instr);
       switch(misc) {
         case "all":
           arr = ogArr;
@@ -60,20 +56,15 @@ function App() {
           });
           break;
         default:
-          // console.log(arr);
           break;
       }
-      // console.log(arr);
       switch(instr) {
         case "clear":
-          // console.log(arr);
           break;
         case "guitar":
           arr = arr.filter((item) => {
             return item.type === "Guitar";
           });
-          // console.log("here");
-          // console.log(arr);
           break;
         case "piano":
           arr = arr.filter((item) => {
@@ -106,35 +97,14 @@ function App() {
           });
           break;
         default:
-          // console.log(arr);
           break;
       }
-      // console.log(arr);
-      // loaded = true;
       return arr;    
   }
-  // console.log("LOOOK", arr);
   stackFilters();
-  // console.log("LOOOK", arr);
   useEffect(() => {
       updatePrice();
-      // stackFilters();
   })
-  // const acousticArray = currArr.filter((item) => {
-  //   return item.acoustic > 0;
-  // })
-  // const electricArray = currArr.filter((item) => {
-  //   return item.acoustic != 1;
-  // })
-  // const guitarArray = currArr.filter((item) => {
-  //   return item.type == "Guitar";
-  // })
-  // const sortedArray = currArr.sort((a, b) => {
-  //   return a.price - b.price;
-  // })
-  // const keyArray = currArr.map((item) => {
-  //   return item.name;
-  // })
   return (
     <div className="App">
       <h1>Music Shoppe</h1>
@@ -201,5 +171,4 @@ function App() {
     </div>
   );
 }
-// setCart(cart.splice(i, 1)); 
 export default App;
