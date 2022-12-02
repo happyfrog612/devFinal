@@ -13,7 +13,7 @@ function Inst(prop) {
         
     return (
         <div class="items">
-            <img src={item.image} />
+            <img src={process.env.PUBLIC_URL + item.image} />
             <h3>{item.name}</h3>
             <p>${item.price}</p><button onClick={cartUpdate}>Add to Cart</button>
         </div>
