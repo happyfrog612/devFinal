@@ -8,18 +8,18 @@ import "./styles/style.css"
 import { Radio } from '@mui/material';
 
 const instruments = [
-  {name: "Steinway Grand Piano", type: "Piano", acoustic: 1, price: 10000, image: "./images/steinway.png", favorite: false},
-  {name: "Martin Acoustic Guitar", type: "Guitar", acoustic: 1, price: 3000, image: "./images/martin.jpeg", favorite: false},
-  {name: "Rhodes MK8", type: "Keyboard", acoustic: 0, price: 5000, image: "./images/rhodes.jpeg", favorite: false},
-  {name: "Yamaha YPG 235", type: "Keyboard", acoustic: 0, price: 300, image: "./images/ypg.jpeg", favorite: false},
-  {name: "Gibson SG Special", type: "Guitar", acoustic: 0, price: 400, image: "./images/gibson.jpeg", favorite: false},
+  {name: "Steinway Grand Piano", type: "Piano", acoustic: 1, price: 10000, image: "/images/steinway.png", favorite: false},
+  {name: "Martin Acoustic Guitar", type: "Guitar", acoustic: 1, price: 3000, image: "/images/martin.jpeg", favorite: false},
+  {name: "Rhodes MK8", type: "Keyboard", acoustic: 0, price: 5000, image: "/images/rhodes.jpeg", favorite: false},
+  {name: "Yamaha YPG 235", type: "Keyboard", acoustic: 0, price: 300, image: "/images/ypg.jpeg", favorite: false},
+  {name: "Gibson SG Special", type: "Guitar", acoustic: 0, price: 400, image: "/images/gibson.jpeg", favorite: false},
   {name: "Taylor Acoustic-Electric Guitar", type: "Guitar", acoustic: 2, price: 3000, image: "./images/taylor.jpeg", favorite: false},
-  {name: "AKG Microphone", type: "Microphone", acoustic: 0, price: 400, image: "./images/akg.jpeg", favorite: false},
-  {name: "Neuman Microphone", type: "Microphone", acoustic: 0, price: 700, image: "./images/neuman.jpeg", favorite: false},
-  {name: "Shure SM58", type: "Microphone", acoustic: 0, price: 300, image: "./images/sm58.jpeg", favorite: false},
-  {name: "Moog Synthesizer", type: "Synthesizer", acoustic: 0, price: 1000, image: "./images/synth.jpeg", favorite: false},
-  {name: "Moog Theremin", type: "Theremin", acoustic: 0, price: 15000, image: "./images/theremin.jpeg", favorite: false},
-  {name: "Yamaha Violin", type: "Violin", acoustic: 1, price: 2000, image: "./images/violin.jpeg", favorite: false}
+  {name: "AKG Microphone", type: "Microphone", acoustic: 0, price: 400, image: "/images/akg.jpeg", favorite: false},
+  {name: "Neuman Microphone", type: "Microphone", acoustic: 0, price: 700, image: "/images/neuman.jpeg", favorite: false},
+  {name: "Shure SM58", type: "Microphone", acoustic: 0, price: 300, image: "/images/sm58.jpeg", favorite: false},
+  {name: "Moog Synthesizer", type: "Synthesizer", acoustic: 0, price: 1000, image: "/images/synth.jpeg", favorite: false},
+  {name: "Moog Theremin", type: "Theremin", acoustic: 0, price: 15000, image: "/images/theremin.jpeg", favorite: false},
+  {name: "Yamaha Violin", type: "Violin", acoustic: 1, price: 2000, image: "/images/violin.jpeg", favorite: false}
 ]
 const ogArr = [...instruments];
 function App() {
