@@ -1,6 +1,6 @@
 Link to Deployed Website
 
-If you used the stencil code, this is https://happyfrog612.github.io/devFinal/
+If you used the stencil code, this is https://happyfrog612.github.io/devFinal
 
 Goal and Value of the Application
 
